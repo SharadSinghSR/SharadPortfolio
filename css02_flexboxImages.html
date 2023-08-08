@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      img {
+        height: 150px;
+        width: 150px;
+      }
+      .flex-container {
+        margin-left: 100px;
+        margin-right: 100px;
+        display: flex;
+        /* border: 2px solid blue; */
+        height: 10vh;
+        /* flex-direction: row-reverse; */
+        /* justify-content: flex-start; */
+        /* justify-content: space-around; */
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .flex-item {
+        border: 2px solid blue;
+        background-color: rgb(241, 108, 108);
+        margin: 10px;
+        width: 150px;
+        height: 150px;
+        line-height: 122px;
+        text-align: center;
+      }
+      a {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <img src="images/online-store.png" style="width: 1200px; height: 300px" />
+    </div>
+    <div class="flex-container">
+      <a href="#">Home</a> | <a href="#">About Us</a> |
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="images/camera.webp" />
+      </div>
+      <div class="flex-item">
+        <img src="images/headphone.webp" />
+      </div>
+      <div class="flex-item">
+        <img src="images/laptop.jpg" />
+      </div>
+      <div class="flex-item">
+        <img src="images/speaker.jpg" />
+      </div>
+    </div>
+  </body>
+</html>
